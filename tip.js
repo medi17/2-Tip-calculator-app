@@ -4,6 +4,7 @@ let custom = document.getElementById("custom");
 let tip = document.querySelector(".tip_amount");
 let total = document.querySelector(".total_amount");
 const reset = document.getElementById("reset");
+const error = document.getElementById("error");
 
 const buttons = document.querySelectorAll(".btn_value")
 
@@ -28,12 +29,21 @@ function tipCalculator() {
           return;
      }
 
-     if (numPeople.value.trim() === "") {
+     if ((numPeople.value.trim() == " " || numPeople.value == 0) && (custom.value.trim() != " " && custom.value != 0)){
+          numPeople.style.border = "2px solid #df0101";
+          error.style.display = "block";
+          return; 
+     } 
+     
+
+     if (numPeople.value.trim() == " " || numPeople.value == 0) {
           tip.textContent = '0.00';
           total.textContent = '0.00';
-          return; 
+          return;
      }
-     
+
+     error.style.display = "none";
+     numPeople.style.border = "2px solid var(--six-color)";
      let totaTip = (bill.value * ( custom.value / 100)) / numPeople.value;
      tip.textContent = totaTip.toFixed(2);
 
@@ -49,6 +59,8 @@ function resetor() {
      tip.textContent = "0.00";
      total.textContent = "0.00";
      reset.style.backgroundColor = "var(--secondary-color)"
+     error.style.display = "none";
+     numPeople.style.border = "none";
 };
 
 
