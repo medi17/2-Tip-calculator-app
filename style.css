@@ -34,6 +34,7 @@ button,a {
     color: var(--main-color);
 }
 .container{
+    overflow: scroll;
     text-align: left;
     position: absolute;
     top: 50%;
@@ -73,6 +74,18 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .people{
     margin-bottom: 20px;
+}
+
+.peop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.peop #error{
+    font-size: 0.45rem;
+    color: #df0101;
+    align-self: center;
+    display: none;
 }
 
 .bill input:focus, 
@@ -172,7 +185,19 @@ input[type="number"]::-webkit-inner-spin-button {
 
 }
 
+@media (max-width: 500px){
+    .container{
+        width: 100%;
+    }
+    .tipper h4 {
+        padding-right: 50px;
+    }
+}
+
 @media (min-width: 768px) {
+    .peop #error {
+        font-size: 0.55rem;
+    }
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
