@@ -27,7 +27,7 @@ Users should be able to:
 
 ![](images/Empty-desktop.jpeg)
 ![](images/Active-desktop.jpeg)
-[](images/Active-mobile.jpeg)
+![](images/Active-mobile.jpeg)
 
 ### Links
 
