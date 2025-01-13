@@ -6,7 +6,7 @@ let total = document.querySelector(".total_amount");
 const reset = document.getElementById("reset");
 const error = document.getElementById("error");
 
-const buttons = document.querySelectorAll(".btn_value")
+const buttons = document.querySelectorAll(".btn_value");
 
 function validateInputs() {
     const billInput = Number(bill.value);
