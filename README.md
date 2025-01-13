@@ -27,12 +27,11 @@ Users should be able to:
 
 ![](images/Empty-desktop.jpeg)
 ![](images/Active-desktop.jpeg)
-[](images/Active-mobile.jpeg)
+![](images/Active-mobile.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [(https://medi17.github.io/2-Tip-calculator-app/))
 
 ## My process
 

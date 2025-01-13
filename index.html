@@ -18,45 +18,53 @@
                <h1>SPLI</h1> 
                <h1>TTER</h1>
           </div>
-          <div class="container">
-               <div class="calculate">
-                    <div class="bill">
-                         <h2>Bill</h2>
-                         <input type="number" placeholder="0" class="num_money">
-                    </div>
-                    <div class="buttons">
-                         <h3>Select Tip %</h3>
-                         <div class="small_btns">
-                              <button class="btn" ><span class="btn_value">5</span>%</button>
-                              <button class="btn" ><span class="btn_value">10</span>%</button>
-                              <button class="btn" ><span class="btn_value">15</span>%</button>
-                              <button class="btn" ><span class="btn_value">25</span>%</button>
-                              <button class="btn" ><span class="btn_value">50</span>%</button>
-
-                              <input type="number" class="cust" id="custom" placeholder="Custom">
+          <div class="calc">
+               <div class="container">
+                    <div class="calculate">
+                         <div class="bill">
+                              <h2>Bill</h2>
+                              <input type="number" placeholder="0" class="num_money">
+                         </div>
+                         <div class="buttons">
+                              <h3>Select Tip %</h3>
+                              <div class="small_btns">
+                                   <button class="btn"><span class="btn_value">5</span>%</button>
+                                   <button class="btn"><span class="btn_value">10</span>%</button>
+                                   <button class="btn"><span class="btn_value">15</span>%</button>
+                                   <button class="btn"><span class="btn_value">25</span>%</button>
+                                   <button class="btn"><span class="btn_value">50</span>%</button>
+               
+                                   <input type="number" class="cust" id="custom" placeholder="Custom">
+                              </div>
+                         </div>
+                         <div class="people">
+                              <div class="peop">
+                                   <h3>Number of people</h3> <span id="error">Can't be Zero</span>
+                              </div>
+                              <input type="number" class="num_people" placeholder="0">
                          </div>
                     </div>
-                    <div class="people">
-                         <div class="peop"><h3>Number of people</h3> <span id="error">Can't be Zero</span></div>
-                         <input type="number" class="num_people" placeholder="0">
-                    </div>
-               </div>
-               <div class="tipper">
-                    <div class="tip">
-                         <div class="descript">
-                              <h3>Tip Amount</h3>
-                              <h4>/person</h4>
+                    <div class="tipper">
+                         <div class="tip">
+                              <div class="descript">
+                                   <h3>Tip Amount</h3>
+                                   <h4>/person</h4>
+                              </div>
+                              <div class="tip_num num">
+                                   <h5>$<span class="tip_amount">0.00</span></h5>
+                              </div>
                          </div>
-                         <div class="tip_num num"><h5>$<span class="tip_amount">0.00</span></h5></div>
-                    </div>
-                    <div class="total">
-                         <div class="descript">
-                              <h3>Total</h3>
-                              <h4> /person</h4>
+                         <div class="total">
+                              <div class="descript">
+                                   <h3>Total</h3>
+                                   <h4> /person</h4>
+                              </div>
+                              <div class="total_num num">
+                                   <h5>$<span class="total_amount">0.00</span></h5>
+                              </div>
                          </div>
-                         <div class="total_num num"><h5>$<span class="total_amount">0.00</span></h5></div>
+                         <button id="reset">RESET</button>
                     </div>
-                    <button id="reset">RESET</button>
                </div>
           </div>
      </main>
